@@ -1,10 +1,5 @@
 
 
-//  MILESTONE 2
-// Ora dobbiamo scrivere del codice che al caricamento della pagina sposti la slide attiva da quella corrente alla successiva, non pensate al click.
-// Ragionate prima sul necessario. Devo recuperare un elemento specifico? Devo recuperare più elementi?
-// Aiutandovi anche e soprattutto con la console dell'ispettore recuperate tutti gli elementi necessari.
-// Scrivete poi il codice che all'avvio della pagina in automatico sposti la slide attiva dalla prima alla seconda.
 
 //  MILESTONE 3
 // Al click dell'utente sulle frecce, il programma cambierà l’immagine attiva, che quindi verrà visualizzata al posto della precedente.
@@ -42,3 +37,7 @@ for (let i = 0; i < slides.length; i++) {
 
     
 }
+console.log("l'immagine attiva era",imgActNow);
+slides[imgActNow+1].classList.add("active");
+
+
