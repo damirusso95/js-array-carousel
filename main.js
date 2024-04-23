@@ -17,6 +17,7 @@
 let slides = document.getElementsByClassName("slide");
 
 let imgActNow;
+let prossimaSlide;
 
 
 // itero su tutte le slide
@@ -37,7 +38,18 @@ for (let i = 0; i < slides.length; i++) {
 
     
 }
+
+// prossima slide = imgactnow + 1
+ prossimaSlide = imgActNow + 1;
+
+// se superiamo l'ultimo indice avviene un reset
+if( prossimaSlide >= slides.length){
+    prossimaSlide = 0;
+}
+
+
+slides[prossimaSlide].classList.add("active");
 console.log("l'immagine attiva era",imgActNow);
-slides[imgActNow+1].classList.add("active");
+
 
 
