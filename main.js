@@ -1,7 +1,4 @@
-// MILESTONE 1
-// Per prima cosa, creiamo il markup statico come visto in mattinata. Costruiamo il container e inseriamo le immagini.
-// Solo una sarà visibile grazie a una sua classe, avremo così la struttura base. Condite con un pò di CSS per dare stile (senza esagerare).
-// Vi consiglio di rispolvere object-fit 
+
 
 //  MILESTONE 2
 // Ora dobbiamo scrivere del codice che al caricamento della pagina sposti la slide attiva da quella corrente alla successiva, non pensate al click.
@@ -18,3 +15,18 @@
 //  MILESTONE 4
 // Create un ulteriore pulsante che vi permetta di fare il lavoro inverso: la slide attiva invece di andare avanti torna indietro.
 // Potete partire copiando il codice ma cosa dovete cambiare? In questa milestone vi assicurerete di aver davvero capito la precedente :occhiolino:
+
+
+
+// trovo tutti gli elementi con classe slide
+slides = document.getElementsByClassName("slide");
+
+
+// itero su tutte le slide
+
+for (let i = 0; i < slides.length; i++) {
+
+    const slide = slides[i];
+    console.log(slide);
+    
+}
