@@ -1,11 +1,7 @@
 
 
 
-//  MILESTONE 3
-// Al click dell'utente sulle frecce, il programma cambierà l’immagine attiva, che quindi verrà visualizzata al posto della precedente.
-// Se abbiamo lavorato correttamente in milestone 2 dovrebbe bastarci poco. Creiamo un event listener per gestire il click sul pulsante.
-// All'interno spostiamo il codice scritto in milestone 2 per far si che la slide non venga cambia al caricamento della pagina, ma al nostro click sul pulsante.
-// Se superate l'ultima slide si spacca tutto e non fa nulla: è un bonus.
+
 
 //  MILESTONE 4
 // Create un ulteriore pulsante che vi permetta di fare il lavoro inverso: la slide attiva invece di andare avanti torna indietro.
@@ -20,7 +16,11 @@ let imgActNow;
 let prossimaSlide;
 
 
-// itero su tutte le slide
+// codice che verrà letto al click del pulsante #btnNexus
+document.getElementById("btnNext").addEventListener("click",function (){
+    // inizio addListener
+
+    // itero su tutte le slide
 
 for (let i = 0; i < slides.length; i++) {
 
@@ -49,7 +49,8 @@ if( prossimaSlide >= slides.length){
 
 
 slides[prossimaSlide].classList.add("active");
+
 console.log(`sposto la selezione da ${imgActNow} a ${prossimaSlide}`);
 
-
-
+// fine addListener
+});
