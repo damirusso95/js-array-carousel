@@ -49,7 +49,7 @@ if( prossimaSlide >= slides.length){
 
 
 slides[prossimaSlide].classList.add("active");
-console.log("l'immagine attiva era",imgActNow);
+console.log(`sposto la selezione da ${imgActNow} a ${prossimaSlide}`);
 
 
 
